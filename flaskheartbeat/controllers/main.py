@@ -35,10 +35,10 @@ class HeartbeatReceiver(Resource):
 
 
 def sendAlert(recipients, statuscode, statusmessage, deviceid, devicename):
-    pushould = Pushould(server_token="rxz8hxpsr7hbf10hp42h38mt1sz63mmlecul5fe06ow3hxui",
-                        url="https://1dvxtg49adq5f5jtzm2a04p2sr2pje3fem1x6gfu2cyhr30p.pushould.com",
-                        email="kliknes@gmail.com",
-                        password="uNh4ck4bl3")
+    pushould = Pushould(server_token="servertokenhere",
+                        url="urlhere.pushould.com",
+                        email="emailhere",
+                        password="passwordhere")
 
     pushould.trigger(room=recipients,
                      event="send",
